@@ -11,9 +11,7 @@ There might be improvements in the future. But since this is a hobby-project I d
 
 some more:
 The game is inpired by the MSX-1, the 8bit homecomputer of the 80's. The idea of the game came when I made an opengl-demo
-to print the characterset of the MSX, made from 3D-cubes. Before that i had found an old audio cassette from 1986. With an old
-walkman I recorded its contents with audacity and normalized it, to be fed back(with nails & crocodile-clamps) to the audio-input of the original MSX1 that we
-owned in the 80's. I managed to load all basic-programs that were on the cassette. One of it was a small basic-program to learn the times-tables, made by my father.
+to print the characterset of the MSX, made from 3D-cubes.
 
 
 USAGE:
