@@ -9,7 +9,7 @@ Everything is made on the fly and very little was planned. So a lot of code migh
 works, so I'm happy with the end-result. The focus was not on the code, but on the outcome :-)
 There might be improvements in the future. But since this is a hobby-project I don't know when.
 
-some more:
+some more:  
 The game is inpired by the MSX-1, the 8bit homecomputer of the 80's. The idea of the game came when I made an opengl-demo
 to print the characterset of the MSX, made from 3D-cubes.
 
@@ -24,6 +24,7 @@ USAGE:
 
 
 Gameplay:
+--------
 choose gamemode:
 At the title-menu-screen, first choose the game mode with RIGHT/LEFT/UP/DOWN-keys.
 Game modes are:
@@ -47,54 +48,53 @@ Known bugs:
 so I decided to keep it, but this 'feature' might dissapear in the future
 * The text does not auto-scale, especially the title might be cropped in certain languages or window-dimensions.
 
-warning:
+warning:  
 Maybe the warp-effect for reaching next level, is too epileptic for some. I have only tested the game on my own children
 and none of them became ill.
 
 
 INSTALLATION:
 ------------
-
-Binaries
 downdoad the binary releases here:
-http:\\sdfasdfasdf
+http://<soon>
 
 BUILD:
+-----
 linux:
-first you need these dependencies:
-- libxcursor
-- libxineram
-- pulseaudio
+  first you need these dependencies:
+  - libxcursor
+  - libxineram
+  - pulseaudio
 
-on ubuntu:
-`sudo apt update; sudo apt install libxinerama libxcursor libpulseaudio`
-.. and maybe som eother things I have to find out
-on fedora/centos:
-`coming soon...`
-
-
-`git clone sdfasfdsa --recurse-submodules`
-`git submodule update --init --recursive`
-`cd timestables`
-`mkdir build`
-`cd build`
-`cmake ../`
-`make` (or `make -j4` to build faster)
-
-for debugging(when changing the code yourself), instead of `cmake ../`, use:
-`cmake -DCMAKE_BUILD_TYPE=Debug ../`. This way you can make use the IMGui-api for testing stuff.
-
-Run the game by typing:
-`./tables`
-
-In case of audioproblems(error-messages and/or not hearing any..), start the game with:
-`padsp ./tables`
-
-windows:
-`git clone sdfasfdsa --recurse-submodules`
-with cmake you can generate a solution, and load it with VisualStudio. I will add the solution later.
+  on ubuntu:  
+  `sudo apt update; sudo apt install libxinerama libxcursor libpulseaudio`
+  .. and maybe some other things I have to find out
+  on fedora/centos:  
+  `coming soon...`
 
 
-Made by KG-Soft 2020
+  `git clone https://github.com/kguyaux/timestables.git --recurse-submodules`
+  `cd timestables`
+  `mkdir build`
+  `cd build`
+  `cmake ../`
+  `make` (or `make -j4` to build faster)
+
+  for debugging(when changing the code yourself), instead of `cmake ../`, use:
+  `cmake -DCMAKE_BUILD_TYPE=Debug ../`. This way you can make use the IMGui-api for testing stuff.
+
+  Run the game by typing:  
+  `./tables`
+
+  In case of audioproblems(error-messages and/or not hearing any..), start the game with:
+  `padsp ./tables`
+
+windows:  
+`git clone https://github.com/kguyaux/timestables.git --recurse-submodules`
+Use cmake to generate a solution, and load it with VisualStudio.
+I will add the solution later on..
+
+
+Made by KG-Soft 2020  
 DISCLAIMER: if something or someone gets damaged, then I am not responsible.
 
