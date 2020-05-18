@@ -15,6 +15,11 @@ ENDIF()
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DIMGUI_IMPL_OPENGL_LOADER_GLAD -DTWEAKIMGUI -DTT_DEBUG")
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -Wall")
 
+# we want the libraries to be found, somewhere in the same dir
+set(CMAKE_SKIP_BUILD_RPATH FALSE)
+set(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
+set(CMAKE_INSTALL_RPATH "./;./external/openal-soft")
+
 
 include_directories(
     include
@@ -94,7 +99,6 @@ set (ALSOFT_INSTALL_AMBDEC_PRESETS OFF CACHE BOOL "Install AmbDec preset files")
 set (ALSOFT_INSTALL_EXAMPLES OFF CACHE BOOL "Install example programs (alplay, alstream, ...)")
 set (ALSOFT_INSTALL_UTILS OFF CACHE BOOL "Install utility programs (openal-info, alsoft-config, ...)")
 set (ALSOFT_UPDATE_BUILD_VERSION OFF CACHE BOOL "Update git build version info")
-
 
 add_subdirectory(external/openal-soft)
 target_link_libraries(tables OpenAL)
