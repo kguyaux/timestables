@@ -4,7 +4,7 @@
 <img align="center" width="320" height="240" src="screenshot2.png">
 
 ## Download:
-downdoad the pre-built binary releases here(Windows & Linux):  
+download the pre-built binary releases here(Windows & Linux):  
 https://github.com/kguyaux/timestables/releases/latest
 
 ## About:
