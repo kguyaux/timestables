@@ -15,12 +15,12 @@ to print the characterset of the MSX, (with 3D-cubes as pixels).
 The 15 colors used are also of the msx1-colorpalette(except text-outlinecolors).
 
 ## usage:
-* press L to cycle through languages
-* press ESC to go back. Also from gameplay. (WARNING you will NOT be asked if sure or not!)
-* press ESC in main-title-screen to quit the game.
-* press F to toggle fullscreen.
-* press ENTER to confirm answer
-* press SPACE to START/SELECT/PROCEED
+* press **L** to cycle through languages
+* press **ESC** to go back. Also from gameplay. (WARNING you will NOT be asked if sure or not!)
+* press **ESC** in main-title-screen to quit the game.
+* press **F** to toggle fullscreen.
+* press **ENTER** to confirm answer
+* press **SPACE** to START/SELECT/PROCEED
 
 
 ## Gameplay:
@@ -40,7 +40,7 @@ press space to start playing.
 First the question will fly into place, after that the cyphers start falling, at a speed depending on the difficulty-value
 (displayed as 'speed': in the top). You have to type quickly, and confirm the answer with ENTER, otherwise the cyphers will
 fall into the all-destructing laser-beam.. and you will loose a life.
-When an answer is icorrect, points will be given. The amount of points gained with each correct answer, is based on difficulty.
+When an answer is correct, points will be given. The amount of points gained with each correct answer, is based on difficulty.
 The game has no end. The goal is to gather as much pints as possible.
 Good Luck & Have fun!
 
@@ -55,24 +55,27 @@ Good Luck & Have fun!
 
 ## BUILD:
 
-linux:  
+**linux:**  
 first you need these dependencies:
 - libxcursor
 - libxineram
 - pulseaudio
 
-on ubuntu:  
+**on ubuntu:**  
 `sudo apt update; sudo apt install libxinerama libxcursor libpulseaudio`  
 .. and maybe some other things I have to check...  
-on fedora/centos:  
+**on fedora/centos:**  
 `coming soon...`  
 
-`git clone https://github.com/kguyaux/timestables.git --recurse-submodules  
-cd timestables  
-mkdir build  
-cd build  
-cmake ../    
-make` (or `make -j4` to build faster)  
+```
+git clone https://github.com/kguyaux/timestables.git --recurse-submodules
+cd timestables
+mkdir build
+cd build
+cmake ../
+make
+``` 
+(or `make -j4` to build faster)  
 
 for debugging(when changing the code yourself), instead of `cmake ../`, use:  
 `cmake -DCMAKE_BUILD_TYPE=Debug ../`. This way you can make use the IMGui-api for testing stuff.  
@@ -83,13 +86,16 @@ Run the game by typing:
 In case of audioproblems(error-messages and/or not hearing any..), start the game with:  
 `padsp ./tables`  
 
-windows:  
+**windows:**  
+
 `git clone https://github.com/kguyaux/timestables.git --recurse-submodules`  
 Use cmake to generate a solution, and load it with VisualStudio.  
 I will add the solution later..
 
-## credits
-Made by KG-Soft 2020
-sounds are sampled from old 8bit games
-DISCLAIMER: if something or someone gets damaged, then I am not responsible.
+## credits  
+Made by KG-Soft 2020  
+sounds are sampled from old 8bit games  
+
+## DISCLAIMER  
+Use this software at own risk. if something or someone gets damaged, then I am not responsible.
 
