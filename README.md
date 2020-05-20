@@ -3,8 +3,8 @@ the TIMES-TABLES
 
 the TIMES-TABLES is a little game to practise the times-tables.
 It is written in c++ and uses openGL & openAL.
-The game is inpired by the MSX-1, the 8bit homecomputer of the 80's. The idea of the game came when I made an opengl-demo
-to print the characterset of the MSX, made from 3D-cubes.
+The game is inpired by the MSX-1, an 8bit homecomputer of the 80's. The idea of the game originated when I made an opengl-demo
+to print the characterset of the MSX, (with 3D-cubes as pixels)
 
 
 USAGE:
@@ -36,11 +36,11 @@ The game has no end. The goal is to gather as much pints as possible.
 Good Luck & Have fun!
 
 
-Known bugs:
-* when ESC is pressed during warp to next level, the game goes back to title but the stars remain in 'hyperdrivemode'. I like it 
-so I decided to keep it, but this 'feature' might dissapear in the future
+Known bugs/issues:
+* when ESC is pressed during warp to next level, the game goes back to title but the stars remain in 'hyperdrivemode'. I like it so I decided to keep it, but this 'feature' might dissapear in the future.
 * The text does not auto-scale, especially the title might be cropped in certain languages or window-dimensions.
-
+* Random function does not work too well yet. You can be asked the same question too soon.
+* The translations may not be very goed.
 
 
 Download:
@@ -50,7 +50,7 @@ https://github.com/kguyaux/timestables/releases/latest
 
 BUILD:
 -----
-linux:
+linux:  
 first you need these dependencies:
 - libxcursor
 - libxineram
@@ -58,17 +58,16 @@ first you need these dependencies:
 
 on ubuntu:  
 `sudo apt update; sudo apt install libxinerama libxcursor libpulseaudio`  
-.. and maybe some other things I have to find out  
+.. and maybe some other things I have to check...  
 on fedora/centos:  
 `coming soon...`  
 
-
-`git clone https://github.com/kguyaux/timestables.git --recurse-submodules`  
-`cd timestables`  
-`mkdir build`  
-`cd build`  
-`cmake ../`  
-`make` (or `make -j4` to build faster)  
+`git clone https://github.com/kguyaux/timestables.git --recurse-submodules  
+cd timestables  
+mkdir build  
+cd build  
+cmake ../    
+make` (or `make -j4` to build faster)  
 
 for debugging(when changing the code yourself), instead of `cmake ../`, use:  
 `cmake -DCMAKE_BUILD_TYPE=Debug ../`. This way you can make use the IMGui-api for testing stuff.  
@@ -82,7 +81,7 @@ In case of audioproblems(error-messages and/or not hearing any..), start the gam
 windows:  
 `git clone https://github.com/kguyaux/timestables.git --recurse-submodules`  
 Use cmake to generate a solution, and load it with VisualStudio.  
-I will add the solution later on..
+I will add the solution later..
 
 
 Made by KG-Soft 2020  
