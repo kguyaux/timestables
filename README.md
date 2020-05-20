@@ -1,26 +1,35 @@
-the TIMES-TABLES
-================
+# TIMES-TABLES
 
+<img align="left" width="320" height="240" src="screenshot1.png">
+<img align="center" width="320" height="240" src="screenshot2.png">
+
+## Download:
+downdoad the pre-built binary releases here(Windows & Linux):  
+https://github.com/kguyaux/timestables/releases/latest
+
+## About:
 the TIMES-TABLES is a little game to practise the times-tables.
-It is written in c++ and uses openGL & openAL.
+It is written in C++ and uses openGL & openAL.
 The game is inpired by the MSX-1, an 8bit homecomputer of the 80's. The idea of the game originated when I made an opengl-demo
-to print the characterset of the MSX, (with 3D-cubes as pixels)
+to print the characterset of the MSX, (with 3D-cubes as pixels).  
+The 15 colors used are also of the msx1-colorpalette(except text-outlinecolors).
 
-
-USAGE:
---------
+## usage:
 * press L to cycle through languages
 * press ESC to go back. Also from gameplay. (WARNING you will NOT be asked if sure or not!)
+* press ESC in main-title-screen to quit the game.
 * press F to toggle fullscreen.
 * press ENTER to confirm answer
 * press SPACE to START/SELECT/PROCEED
 
 
-Gameplay:
---------
-choose gamemode:
+## Gameplay:
+
+<img align="center" width="320" height="240" src="screenshot3.png">  
+
+choose gamemode:  
 At the title-menu-screen, first choose the game mode with RIGHT/LEFT/UP/DOWN-keys.
-Game modes are:
+Game modes are:  
 * Successive: choose a table to start from. After 10 (correct or incorrect) answers you warp to the next table. For example:
 if you choose to start from table 5, you will proceed to the table of 6.
 * Single: practice a single table, choose with UP/DOWN. after 5 correct answers, you 'warp', and the difficulty increases
@@ -36,20 +45,16 @@ The game has no end. The goal is to gather as much pints as possible.
 Good Luck & Have fun!
 
 
-Known bugs/issues:
+## Known bugs/issues:
 * when ESC is pressed during warp to next level, the game goes back to title but the stars remain in 'hyperdrivemode'. I like it so I decided to keep it, but this 'feature' might dissapear in the future.
 * The text does not auto-scale, especially the title might be cropped in certain languages or window-dimensions.
 * Random function does not work too well yet. You can be asked the same question too soon.
 * The translations may not be very goed.
 
 
-Download:
-------------
-downdoad the pre-built binary releases here(Windows & Linux):  
-https://github.com/kguyaux/timestables/releases/latest
 
-BUILD:
------
+## BUILD:
+
 linux:  
 first you need these dependencies:
 - libxcursor
@@ -83,7 +88,8 @@ windows:
 Use cmake to generate a solution, and load it with VisualStudio.  
 I will add the solution later..
 
-
-Made by KG-Soft 2020  
+## credits
+Made by KG-Soft 2020
+sounds are sampled from old 8bit games
 DISCLAIMER: if something or someone gets damaged, then I am not responsible.
 
